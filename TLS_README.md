@@ -58,7 +58,7 @@ I found a command online that let's the user change the domains within the certi
 
       $ sudo certbot certonly --cert-name www.cit480mars.net -d cit480mars.net,www.cit480mars.net
 
-      ****If you want to secure 2 domains, separate them by a comma...
+      ****If you want to secure 2 domains, separate them by a comma.
 
 After running the command, both domains are not secure when typing them in.
 They don't get redirected to HTTPS.
