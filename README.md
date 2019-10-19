@@ -1,18 +1,20 @@
-#__**Mars**__
+# __**Mars**__
 
 
 
 
 ################
+
 An Ansible playbook is an organized unit of scripts that defines work for a server configuration managed by the automation tool Ansible. 
 
 
 ###############
+
 Ansible is a configuration management tool that automates the configuration of multiple servers by the use of Ansible playbooks. 
 
 
 
-##What will playbook do
+## What will playbook do
 1) Install apache2
 2) Update apache2
 3) Pull Repo for Group Mars
@@ -24,14 +26,14 @@ Ansible is a configuration management tool that automates the configuration of m
 
 
 
-##Requirements:
+## Requirements:
 1) Upload your public ssh key to the hosts
 2) Make sure your private ssh key has correct permissions
 	* chmod 400
 
 
 
-##Usage
+## Usage
 
 1) Install ansible
 	* sudo apt-get install ansible
