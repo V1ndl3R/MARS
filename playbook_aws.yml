@@ -1,0 +1,21 @@
+---
+- name: Playbook-AWS
+  hosts: webservers
+  tasks:
+          - name: ensure apache is at the latest version
+            apt: name=apache2 state=latest
+          - name: ensure apache is running
+            service: name=apache2 state=started
+
+          - name: Pull Repo
+            raw: git clone https://github.com/V1ndl3R/MARS.git -b html /tmp/repo
+          - name: Rename current index.html
+            raw: mv /var/www/html/index.html /var/www/html/index.html.old
+          - name: Copy New Index File
+            raw: cp /tmp/repo/HTML/index.html /var/www/html/
+          - name: Copy Required Files/Images
+            raw: cp -a /tmp/repo/HTML/images /var/www/html/
+          - name: Remove Repo
+            raw: rm -r /tmp/repo
+          - name: ensure apache is restarted
+            service: name=apache2 state=restarted
