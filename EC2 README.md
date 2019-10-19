@@ -1,8 +1,6 @@
 Steps to Create EC2 Instance
 ----------------------------------
 
-Go to www.letsencrypt.com (free service)
-
 First, head to AWS and find the EC2 management console.
 
 Select the option for Launch a New Instance.
